@@ -1,0 +1,34 @@
+@*
+@(personBy : Form[Person])
+
+@import helper._
+
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crear Persona</title>
+    </head>
+    <body>
+        <h1>Crear Persona</h1>
+        <form action="@routes.PersonController.save" method="post" enctype="multipart/form-data">
+            id: <input type="text" name="id">
+            first name: <input type="text" name="firstName">
+            last name: <input type="text" name="lastName">
+            <input type="submit">
+
+        </form>
+        @helper.form(action=routes.PersonController.save()){
+        @helper.CSRF.formField
+        @helper.inputText(personBy("id"))
+        @helper.inputText(personBy("firstName"))
+        @helper.inputText(personBy("lastName"))
+
+        <input type="submit" value="Create Person" formmethod="post">
+        }
+
+
+    </body>
+</html>
+
+*@

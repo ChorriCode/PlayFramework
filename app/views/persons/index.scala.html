@@ -1,0 +1,19 @@
+@(persons : List[PersonJPA])
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+   <meta charset="UTF-8">
+   <title>Todas Las Personas</title>
+  </head>
+  <body>
+   <h1>Todas Las Personas</h1>
+   @for(person <- persons){
+   <p>@persons.size()</p>
+   <a href="#">@person.id</a>
+   <p>@person.firstName</p>
+   <p>@person.lastName</p>
+   <p>------------------------------</p>
+   }
+  </body>
+</html>

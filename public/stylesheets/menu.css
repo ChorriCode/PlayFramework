@@ -1,0 +1,218 @@
+body{
+    font-family: sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    
+}
+h1{
+    
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+nav .brand-logo{
+    margin-left: 7%;
+    left: inherit;
+
+}
+
+.container{
+    
+    padding-bottom: 2%;
+    box-shadow: 6px 6px 17px 0px #000;
+    margin: 0 auto;
+}
+input.menu{
+
+    margin: 0 auto;
+}
+
+
+input{
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+    height: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 150px !important;
+}
+a>input#inputBuscar{
+    background-color: white !important;
+    color: cornflowerblue;
+}
+select {
+    display: inline;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+}
+@media screen and (max-width: 450px){
+nav ul a{
+    padding: 0 5px;
+    font-size: 0.8em;    
+}
+input {
+    width: 60px !important;
+}
+}
+
+i{
+    color: red;
+}
+label{
+    font-size: 1em;
+    color: #163756;
+}
+
+  div.valor {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #c8e2f1;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+div.insertado, div.modificado{
+  float:right;
+  position: relative;
+  top: -20px;
+  right: 25px;
+    }
+div.pintarId{
+    float: left;
+    position: relative;
+    top: 10px;
+    right: -25px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: deepskyblue;
+}
+
+input.insertado, input.modificado {
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: white;
+}
+label.insertado, label.modificado {
+    font-size: 1em;
+    color: #333333;
+    float: left;
+    width: 60px;
+    margin-left: 10%;
+  }
+  p.insertado, p.modificado{
+    background-color: lightsteelblue;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+button.insertado, button.modificado{
+      width: 40px;
+      height: 30px;
+}
+button.insertado>i{
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+nav{
+    background-color: #163756;  
+}
+
+tr:hover {
+    font-weight: bold;
+}
+
+/*
+tr:hover{
+    background-color: #faaaaf;
+}
+td {
+    padding: 5px 2px;
+
+}
+
+caption {
+    font-family: sans-serif;
+    background-color: #274867;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+}
+
+
+td{
+    color: black;
+  }
+tr.save>td>input{
+    background-color: #a7d1e0; 
+    
+  }
+
+td>a {
+    padding: 2px;
+    color: #eeeeee;
+    background-color: #a50000;
+}
+.page-footer, tbody {
+    color: #dddddd;
+    background-color: #c8e2f1;
+}
+thead{
+       background-color:  #009fda;
+       color: white;
+}*/
+.page-footer .footer-copyright{
+    
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(38,53,94,1);
+}
+.page-footer {
+    background-color: #c8e2f1;
+ 
+}
+tbody tr.odd td {
+    background-color: #c8e2f1 !important;
+}
+
+tr>td:nth-child(1){
+    width: 10%;
+}
+tr>td:nth-child(2){
+    width: 40%;
+}
+tr>td:nth-child(3){
+    width: 40%;
+}
+tr>td:nth-child(4){
+    width: 10%;
+    text-align: center;
+}
+th{
+    background-color: #e6f0f9;
+}
+td {
+    padding: 1px !important;
+}
+button.borrable{
+    height: 23px;
+}
+/*
+li>button{
+    margin-right: 15px;
+    margin-top: 5px;
+    width: 75px;
+    height: 35px;
+
+}*/

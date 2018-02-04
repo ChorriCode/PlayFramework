@@ -1,0 +1,29 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
++ nocsrf
+GET     /                           models.BBDD_Connection.index()
+
+
+# Controllers for Person class
+
+GET     /persons                    models.PersonCRUD.readCRUD()
+
++ nocsrf
+POST    /persons/create             models.PersonCRUD.createCRUD()
+GET     /persons/:firstName         models.PersonCRUD.searchCRUD(firstName : String)
+
++ nocsrf
+PUT     /persons/:id                models.PersonCRUD.updateCRUD(id : Integer)
+GET     /persons/edit/:id           controllers.PersonController.edit(id : Integer)
+#POST   /persons/edit               updateCRUD()
+
++ nocsrf
+#POST   /persons/create             controllers.PersonController.save()
+DELETE  /persons/delete/:id         models.PersonCRUD.deleteCRUD(id : Long)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
